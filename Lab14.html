@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="text"></p>
+	<script>
+		var input = window.prompt("Please input some words~");
+		var char = window.prompt("Please input a char to search ;-)");
+
+		var answer1 = input.indexOf(char);
+		var answer2 = input.lastIndexOf(char);
+		var answer3 = input.indexOf(char, 3);
+
+		document.getElementById("text").innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3 + "<br>";
+	</script>
+
+</body>
+</html>
